@@ -1,0 +1,13 @@
+# MZDevStudio
+
+> Niezależne studio projektowo-programistyczne tworzące szybkie strony internetowe, portale i aplikacje webowe w autorskim kodzie (Polska & zdalnie).
+
+- [Strona główna (PL)](https://mzdevstudio.pl/): Oferta, wybrane realizacje, proces współpracy, FAQ i formularz kontaktowy.
+- [Homepage (EN)](https://mzdevstudio.pl/?lang=en): Custom websites, portals, and web applications built from scratch.
+- [Polityka Prywatności & RODO](https://mzdevstudio.pl/polityka-prywatnosci): Zasady przetwarzania danych z formularza kontaktowego.
+- [Regulamin Świadczenia Usług](https://mzdevstudio.pl/regulamin): Zasady współpracy, płatności i gwarancji.
+
+## Kontakt
+
+- E-mail: mzdrowy@gmail.com
+- GitHub: https://github.com/MzdrowY
