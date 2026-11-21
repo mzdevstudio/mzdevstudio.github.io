@@ -38,7 +38,7 @@ jobs:
         env:
           VITE_BASE_PATH: ${{ steps.pages.outputs.base_path || '/' }}
           VITE_SITE_URL: ${{ steps.pages.outputs.base_url }}
-          VITE_SITE_NOINDEX: ${{ endsWith(steps.pages.outputs.host, '.github.io') }}
+          VITE_SITE_NOINDEX: ${{ steps.pages.outputs.base_path != '' }}
         run: |
           npm run lint
           npm run build

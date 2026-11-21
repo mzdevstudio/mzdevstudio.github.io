@@ -31,4 +31,4 @@ Domyślny adres docelowy formularza kontaktowego (`mzdrowy@gmail.com`) można na
 
 ## Wdrożenie na GitHub Pages
 
-Automatyczne wdrożenie uruchamia workflow `.github/workflows/deploy.yml` po każdym pushu na gałąź `main`. Do czasu podpięcia własnej domeny (`mzdevstudio.pl`) w ustawieniach repozytorium (**Settings → Pages → Custom domain**) workflow buduje wersję pod adres podfolderu GitHub Pages z blokadą indeksowania (`noindex`), a po podpięciu domeny automatycznie przełącza budowanie na domenę główną.
+Automatyczne wdrożenie uruchamia workflow `.github/workflows/deploy.yml` po każdym pushu na gałąź `main`. W repozytorium `mzdevstudio/mzdevstudio.github.io` strona publikuje się pod adresem `https://mzdevstudio.github.io/`, a po dodaniu własnej domeny (`mzdevstudio.pl`) w ustawieniach repozytorium (**Settings → Pages → Custom domain**) i ponownym uruchomieniu workflow automatycznie aktualizuje adresy kanoniczne i mapę witryny.
