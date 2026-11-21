@@ -14,7 +14,7 @@ export interface ServiceItem {
 export interface PortfolioProject {
   id: string;
   title: string;
-  category: 'landing' | 'ecommerce' | 'corporate' | 'webapp';
+  category: 'landing' | 'ecommerce' | 'corporate' | 'webapp' | 'desktop';
   categoryLabel: string;
   client: string;
   description: string;
@@ -26,6 +26,7 @@ export interface PortfolioProject {
   colorGradient?: string;
   mockupType?: 'saas' | 'store' | 'agency' | 'clinic' | 'fintech';
   liveUrl?: string;
+  liveLabel?: string;
   previewImage?: string;
 }
 

@@ -95,7 +95,11 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
             className="w-full sm:w-auto px-6 py-3.5 rounded-full text-xs font-semibold text-emerald-300 bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 transition-colors flex items-center justify-center gap-2"
           >
             <ExternalLink className="w-4 h-4" />
-            <span>{lang === 'pl' ? 'Otwórz stronę na żywo' : 'Visit Live Site'}</span>
+            <span>
+              {project.category === 'desktop'
+                ? (lang === 'pl' ? 'Zobacz projekt na GitHubie' : 'View Project on GitHub')
+                : (lang === 'pl' ? 'Otwórz stronę na żywo' : 'Visit Live Site')}
+            </span>
           </a>
         )}
 

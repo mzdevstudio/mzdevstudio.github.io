@@ -24,6 +24,7 @@ export const Portfolio: React.FC<PortfolioProps> = ({ onSelectProject }) => {
     { id: 'ecommerce', label: t('portfolio.categories.ecommerce') || (lang === 'pl' ? 'Sklepy E-Commerce' : 'E-Commerce') },
     { id: 'landing', label: t('portfolio.categories.landing') || (lang === 'pl' ? 'Landing Page' : 'Landing Pages') },
     { id: 'webapp', label: t('portfolio.categories.webapp') || (lang === 'pl' ? 'Serwisy i portale' : 'Web Portals') },
+    { id: 'desktop', label: t('portfolio.categories.desktop') || (lang === 'pl' ? 'Aplikacje desktopowe' : 'Desktop Apps') },
   ].filter((cat) => cat.id === 'all' || projectsList.some((p) => p.category === cat.id));
 
   return (
@@ -120,7 +121,7 @@ export const Portfolio: React.FC<PortfolioProps> = ({ onSelectProject }) => {
                               className="relative z-10 flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 hover:bg-emerald-500/20 text-[11px] font-mono font-bold transition-colors"
                             >
                               <ExternalLink className="w-3 h-3 text-emerald-400" />
-                              <span>Live</span>
+                              <span>{project.liveLabel || 'Live'}</span>
                             </a>
                           ) : null}
 
